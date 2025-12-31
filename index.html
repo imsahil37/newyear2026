@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Pglu | 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    
+    <audio id="bgMusic" src="love.mp3" loop></audio>
+
+    <div class="background-particles">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+        <div class="particle p4"></div>
+        <div class="particle p1 p-alt"></div>
+        <div class="particle p2 p-alt"></div>
+    </div>
+
+    <div id="entry-screen">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div class="entry-content">
+            <h1 class="entry-title">For <span class="gold-text">Pglu</span></h1>
+            <p class="entry-subtitle">A journey through 2025</p>
+            <button id="enterBtn" class="glow-btn">ENTER WORLD</button>
+        </div>
+    </div>
+
+    <main id="main-content" class="hidden-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="title">Hey <span class="accent">Pglu</span></h1>
+                <p class="subtitle">Ready to step into 2026?</p>
+                <div class="scroll-indicator"><span>↓ Scroll to rewind</span></div>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <div class="line"></div>
+            
+            <div class="memory-card-container left">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>January</h3>
+                        <p>How the year started. Cold days, warm hugs.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="jan.jpeg" alt="January">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container right">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>February</h3>
+                        <p>Month of love. Every day is Valentine's with you.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="feb.jpeg" alt="February">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container left">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>March</h3>
+                        <p>Things started getting interesting here.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="mar.jpeg" alt="March">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container right">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>April</h3>
+                        <p>Blooming flowers and your blooming smile.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="apr.jpeg" alt="April">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container left">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>May</h3>
+                        <p>Just a random moment I cherish.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="may.jpeg" alt="May">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container right">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>June</h3>
+                        <p>Halfway through the year, fully in love.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="june.jpeg" alt="June">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container left">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>July</h3>
+                        <p>Rainy days and cozy vibes.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="july.jpeg" alt="July">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container right">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>August</h3>
+                        <p>Making memories that last forever.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="aug.jpeg" alt="August">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container left">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>September</h3>
+                        <p>A beautiful autumn with a beautiful person.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="sep.jpeg" alt="September">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container right">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>October</h3>
+                        <p>Spooky season, but you're just sweet.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="oct.jpeg" alt="October">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container left">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>November</h3>
+                        <p>Almost there. Grateful for you.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="nov.jpeg" alt="November">
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card-container right">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass">
+                        <h3>December</h3>
+                        <p>Ending the year with my favorite human.</p>
+                        <span class="tap-hint">Tap to see</span>
+                    </div>
+                    <div class="flip-card-back glass">
+                        <img src="dec.jpeg" alt="December">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lock-section">
+            <h2>One Last Step</h2>
+            <p>Hold the button to unlock our 2026</p>
+            <div class="hold-container">
+                <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="52" cx="60" cy="60"/>
+                </svg>
+                <button id="holdBtn" class="glass-btn">HOLD</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="finale" class="hidden">
+        <div class="ambient-glow"></div>
+        <div class="year-watermark">2026</div>
+        <div class="final-message">
+            <h1>Happy New Year <br> <span class="gold">Pglu</span></h1>
+            <p id="typewriter"></p>
+            <div class="signature">- Your Buddhu</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
